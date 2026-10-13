@@ -1,0 +1,1 @@
+"""Platform adapters — Windows paths, GPU probe, file IO."""
