@@ -1,0 +1,40 @@
+# ai-galaxy-planet-generator — default runtime config
+runtime:
+  device: auto          # auto | cpu | cuda
+  threads: 0            # 0 = let torch decide
+  deterministic: true   # seed every RNG, disable cudnn autotune
+
+generation:
+  default_resolution: 2048
+  heightmap_octaves: 7
+  heightmap_lacunarity: 2.05
+  heightmap_gain: 0.5
+  erosion_passes: 24
+
+galaxy:
+  default_arms: 4
+  default_star_count: 8000
+  arm_tightness: 6.2
+  bulge_ratio: 0.18
+
+presets:
+  terran:
+    base_color: [0.18, 0.42, 0.24]
+    water_level: 0.52
+    atmosphere_density: 0.78
+    cloud_coverage: 0.44
+  desert:
+    base_color: [0.72, 0.55, 0.31]
+    water_level: 0.08
+    atmosphere_density: 0.41
+    cloud_coverage: 0.09
+  ice:
+    base_color: [0.82, 0.88, 0.94]
+    water_level: 0.61
+    atmosphere_density: 0.55
+    cloud_coverage: 0.62
+  volcanic:
+    base_color: [0.31, 0.14, 0.11]
+    water_level: 0.03
+    atmosphere_density: 1.12
+    cloud_coverage: 0.71
