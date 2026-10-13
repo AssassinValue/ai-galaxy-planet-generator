@@ -1,0 +1,1 @@
+"""Entry points: desktop app and CLI."""
