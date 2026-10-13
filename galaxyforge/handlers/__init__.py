@@ -1,0 +1,1 @@
+"""Thin handlers — parse, delegate, return. No business logic."""
