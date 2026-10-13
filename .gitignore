@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Torch / CUDA cache
+.cache/torch/
+*.pt.tmp
+
+# Generated artifacts (planets, galaxies, heightmaps)
+out/
+exports/
+*.gfp
+*.gfx
+*.hmap
+*.png
+!docs/examples/*.png
+
+# Qt / IDE
+*.qmlc
+*.jsc
+.idea/
+.vscode/
+*.user
+
+# Windows
+Thumbs.db
+desktop.ini
